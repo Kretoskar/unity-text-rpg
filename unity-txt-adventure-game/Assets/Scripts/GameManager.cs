@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,12 +22,31 @@ public class GameManager : MonoBehaviour {
 
 	void Start () {
         currentState = startingState;
-        storyText.text = currentState.GetStoryText();
-        answerAText.text = currentState.GetAnswerAText();
-        answerBText.text = currentState.GetAnswerBText();
+        UpdateText();
 	}
 
 	void Update () {
-		
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            ManageStates(0);
+        }
+        else if (Input.GetKeyDown(KeyCode.B))
+        {
+            ManageStates(1);
+        }
 	}
+
+    private void ManageStates(int stateNumber)
+    {
+        State[] nextStates = currentState.GetNextStates();
+        currentState = nextStates[stateNumber];
+        UpdateText();
+    }
+
+    private void UpdateText()
+    {
+        storyText.text = currentState.GetStoryText();
+        answerAText.text = currentState.GetAnswerAText();
+        answerBText.text = currentState.GetAnswerBText();
+    }
 }

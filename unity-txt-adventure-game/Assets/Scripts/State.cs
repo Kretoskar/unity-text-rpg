@@ -16,6 +16,9 @@ public class State : ScriptableObject {
     [SerializeField]
     private string mAnswerBText;
 
+    [SerializeField]
+    private State[] mNextStates;
+
     public string GetStoryText()
     {
         return mStoryText;
@@ -29,5 +32,10 @@ public class State : ScriptableObject {
     public string GetAnswerBText()
     {
         return mAnswerBText;
+    }
+
+    public State[] GetNextStates()
+    {
+        return mNextStates;
     }
 }
