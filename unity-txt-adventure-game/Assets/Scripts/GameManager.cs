@@ -33,27 +33,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Update () {
-        if (!currentState.GetIsGameOverOrWin())
-        {
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                ManageStates(0);
-            }
-            else if (Input.GetKeyDown(KeyCode.B))
-            {
-                ManageStates(1);
-            }
-        } else
-        {
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                ManageStates(0);
-            }
-            else if (Input.GetKeyDown(KeyCode.B))
-            {
-                GameOver();
-            }
-        }
+        GetUserInput();
 	}
 
     private void ManageStates(int stateNumber)
@@ -80,5 +60,31 @@ public class GameManager : MonoBehaviour {
     private void ClickSound()
     {
         audioSource.PlayOneShot(clickAudio);
+    }
+
+    private void GetUserInput()
+    {
+        if (!currentState.GetIsGameOverOrWin())
+        {
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                ManageStates(0);
+            }
+            else if (Input.GetKeyDown(KeyCode.B))
+            {
+                ManageStates(1);
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                ManageStates(0);
+            }
+            else if (Input.GetKeyDown(KeyCode.B))
+            {
+                GameOver();
+            }
+        }
     }
 }
