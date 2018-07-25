@@ -19,13 +19,13 @@ Platform assembly: C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg
 Loading C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg\unity-txt-adventure-game\test_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg\unity-txt-adventure-game\test_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg\unity-txt-adventure-game\test_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.109 seconds
+- Completed reload, in  0.066 seconds
 Platform assembly: C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg\unity-txt-adventure-game\test_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg\unity-txt-adventure-game\test_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3600x1080 at -1680,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.668049 ms
+UnloadTime: 1.794884 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1884 -> priority: 1 
+  Thread -> id: 3a0c -> priority: 1 
