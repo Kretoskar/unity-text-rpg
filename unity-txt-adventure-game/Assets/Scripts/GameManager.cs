@@ -18,9 +18,16 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private State startingState;
 
+    [SerializeField]
+    private AudioClip clickAudio;
+
+    private AudioSource audioSource;
+
     private State currentState;
 
+
 	void Start () {
+        audioSource = GetComponent<AudioSource>();
         currentState = startingState;
         UpdateText();
 	}
@@ -44,16 +51,23 @@ public class GameManager : MonoBehaviour {
             }
             else if (Input.GetKeyDown(KeyCode.B))
             {
-                Application.Quit();
+                GameOver();
             }
         }
 	}
 
     private void ManageStates(int stateNumber)
     {
+        ClickSound();
         State[] nextStates = currentState.GetNextStates();
         currentState = nextStates[stateNumber];
         UpdateText();
+    }
+
+    private void GameOver()
+    {
+        ClickSound();
+        Application.Quit();
     }
 
     private void UpdateText()
@@ -61,5 +75,10 @@ public class GameManager : MonoBehaviour {
         storyText.text = currentState.GetStoryText();
         answerAText.text = currentState.GetAnswerAText();
         answerBText.text = currentState.GetAnswerBText();
+    }
+
+    private void ClickSound()
+    {
+        audioSource.PlayOneShot(clickAudio);
     }
 }
