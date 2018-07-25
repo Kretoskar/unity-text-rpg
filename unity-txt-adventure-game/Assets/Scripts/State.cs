@@ -17,6 +17,9 @@ public class State : ScriptableObject {
     private string mAnswerBText;
 
     [SerializeField]
+    private bool isGameOverOrWin;
+
+    [SerializeField]
     private State[] mNextStates;
 
     public string GetStoryText()
@@ -37,5 +40,10 @@ public class State : ScriptableObject {
     public State[] GetNextStates()
     {
         return mNextStates;
+    }
+
+    public bool GetIsGameOverOrWin()
+    {
+        return isGameOverOrWin;
     }
 }

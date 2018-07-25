@@ -26,13 +26,26 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Update () {
-        if(Input.GetKeyDown(KeyCode.A))
+        if (!currentState.GetIsGameOverOrWin())
         {
-            ManageStates(0);
-        }
-        else if (Input.GetKeyDown(KeyCode.B))
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                ManageStates(0);
+            }
+            else if (Input.GetKeyDown(KeyCode.B))
+            {
+                ManageStates(1);
+            }
+        } else
         {
-            ManageStates(1);
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                ManageStates(0);
+            }
+            else if (Input.GetKeyDown(KeyCode.B))
+            {
+                Application.Quit();
+            }
         }
 	}
 
