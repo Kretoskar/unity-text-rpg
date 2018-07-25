@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour {
 
 	public void NewGame()
     {
+        PlayerPrefs.SetInt("CurrentState", 0);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int newGameSceneIndex = currentSceneIndex + 1;
         SceneManager.LoadScene(newGameSceneIndex);
