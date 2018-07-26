@@ -19,19 +19,19 @@ Platform assembly: C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg
 Loading C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg\unity-txt-adventure-game\ShiaTextAdventure_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg\unity-txt-adventure-game\ShiaTextAdventure_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg\unity-txt-adventure-game\ShiaTextAdventure_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.096 seconds
+- Completed reload, in  0.122 seconds
 Platform assembly: C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg\unity-txt-adventure-game\ShiaTextAdventure_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\admin\Desktop\Projekty\_Unity\txt-rpg\unity-text-rpg\unity-txt-adventure-game\ShiaTextAdventure_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3600x1080 at -1680,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.472656 ms
+UnloadTime: 2.689763 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 8.113895 ms
+UnloadTime: 8.178239 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 291.
-Total: 0.326055 ms (FindLiveObjects: 0.033158 ms CreateObjectMapping: 0.022500 ms MarkObjects: 0.247107 ms  DeleteObjects: 0.021710 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 290.
+Total: 0.322503 ms (FindLiveObjects: 0.031974 ms CreateObjectMapping: 0.019342 ms MarkObjects: 0.249870 ms  DeleteObjects: 0.020131 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 36ac -> priority: 1 
+  Thread -> id: 40e4 -> priority: 1 
